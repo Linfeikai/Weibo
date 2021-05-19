@@ -13,6 +13,13 @@
 		661ACF7D265433670032CADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661ACF7C265433670032CADD /* Assets.xcassets */; };
 		661ACF80265433670032CADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661ACF7E265433670032CADD /* LaunchScreen.storyboard */; };
 		661ACF83265433670032CADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661ACF82265433670032CADD /* main.m */; };
+		663D52F026545A180048E81B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52EF26545A180048E81B /* search.png */; };
+		663D52F226545A1E0048E81B /* browse.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52F126545A1D0048E81B /* browse.png */; };
+		663D52F426545A220048E81B /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52F326545A220048E81B /* email.png */; };
+		663D52F626545D300048E81B /* icon-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52F526545D300048E81B /* icon-20@3x.png */; };
+		663D52F826545D7B0048E81B /* icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52F726545D7B0048E81B /* icon-29@3x.png */; };
+		663D52FA26553AA30048E81B /* FYlWV.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52F926553AA30048E81B /* FYlWV.png */; };
+		663D52FC26553E760048E81B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D52FB26553E760048E81B /* home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		661ACF7F265433670032CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		661ACF81265433670032CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		661ACF82265433670032CADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		663D52EF26545A180048E81B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		663D52F126545A1D0048E81B /* browse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browse.png; sourceTree = "<group>"; };
+		663D52F326545A220048E81B /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		663D52F526545D300048E81B /* icon-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@3x.png"; sourceTree = "<group>"; };
+		663D52F726545D7B0048E81B /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@3x.png"; sourceTree = "<group>"; };
+		663D52F926553AA30048E81B /* FYlWV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FYlWV.png; sourceTree = "<group>"; };
+		663D52FB26553E760048E81B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,13 @@
 				661ACF77265433640032CADD /* ViewController.m */,
 				661ACF79265433640032CADD /* Main.storyboard */,
 				661ACF7C265433670032CADD /* Assets.xcassets */,
+				663D52F526545D300048E81B /* icon-20@3x.png */,
+				663D52F726545D7B0048E81B /* icon-29@3x.png */,
+				663D52FB26553E760048E81B /* home.png */,
+				663D52F926553AA30048E81B /* FYlWV.png */,
+				663D52F326545A220048E81B /* email.png */,
+				663D52EF26545A180048E81B /* search.png */,
+				663D52F126545A1D0048E81B /* browse.png */,
 				661ACF7E265433670032CADD /* LaunchScreen.storyboard */,
 				661ACF81265433670032CADD /* Info.plist */,
 				661ACF82265433670032CADD /* main.m */,
@@ -128,9 +149,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663D52F026545A180048E81B /* search.png in Resources */,
+				663D52FA26553AA30048E81B /* FYlWV.png in Resources */,
+				663D52F826545D7B0048E81B /* icon-29@3x.png in Resources */,
 				661ACF80265433670032CADD /* LaunchScreen.storyboard in Resources */,
+				663D52F226545A1E0048E81B /* browse.png in Resources */,
+				663D52F626545D300048E81B /* icon-20@3x.png in Resources */,
+				663D52FC26553E760048E81B /* home.png in Resources */,
 				661ACF7D265433670032CADD /* Assets.xcassets in Resources */,
 				661ACF7B265433640032CADD /* Main.storyboard in Resources */,
+				663D52F426545A220048E81B /* email.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
