@@ -40,7 +40,7 @@
             
             self.nameLable = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 200, 200)];
             self.nameLable.textColor = [UIColor redColor];
-            self.nameLable.text = @"xm";
+            self.nameLable.text = @"小虎";
             self.nameLable;
             
         })];
