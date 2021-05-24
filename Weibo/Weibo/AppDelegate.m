@@ -6,8 +6,11 @@
 //  Copyright © 2021 Linfeikai. All rights reserved.
 //
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "ViewController.h"
+#import "WebViewController.h"
+#import "WeiboViewController.h"
+#import "editViewController.h"
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -16,38 +19,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UITabBarController *tabbarController = [[UITabBarController alloc]init];
-    UIViewController *viewController1 = [[UIViewController alloc]init];
+    WeiboViewController *viewController1 = [[WeiboViewController alloc]init];
     UIViewController *viewController2 = [[UIViewController alloc]init];
-      UIViewController *viewController3= [[UIViewController alloc]init];
-      UIViewController *viewController4= [[UIViewController alloc]init];
-    
+    UIViewController *viewController3 = [[UIViewController alloc]init];
+      ViewController *viewController4= [[ViewController alloc]init];
+
     viewController1.tabBarItem.title = @"首页";
-    viewController1.view.backgroundColor =[UIColor redColor];
-   viewController1.tabBarItem.image = [UIImage imageNamed:@"home"];
+    //viewController1.view.backgroundColor =[UIColor redColor];
+   viewController1.tabBarItem.image = [UIImage imageNamed:@"home1"];
     viewController2.tabBarItem.title = @"发现";
     viewController2.view.backgroundColor =[UIColor grayColor];
-    viewController2.tabBarItem.image = [UIImage imageNamed:@"icon-29@3x.png"];
-   // [viewController2.tabBarItem.image ];
+    viewController2.tabBarItem.image = [UIImage imageNamed:@"search"];
     viewController3.tabBarItem.title = @"消息";
     viewController3.view.backgroundColor =[UIColor greenColor];
-//    viewController3.tabBarItem.image = [UIImage imageNamed:@"email.png"];
+   viewController3.tabBarItem.image = [UIImage imageNamed:@"email"];
     viewController4.tabBarItem.title = @"我的";
     viewController4.view.backgroundColor =[UIColor purpleColor];
- //   viewController4.tabBarItem.image = [UIImage imageNamed:@"browse.png"];
+    viewController4.tabBarItem.image = [UIImage imageNamed:@"browse"];
     
 
     [tabbarController setViewControllers:@[viewController1,viewController2,viewController3,viewController4]];
     tabbarController.delegate = self;
-    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
    self.window.rootViewController = navigationController;
-    
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
+
 }
 
 
