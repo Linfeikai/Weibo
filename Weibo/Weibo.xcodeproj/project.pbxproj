@@ -20,7 +20,7 @@
 		663D53022655457E0048E81B /* browse.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D53012655457D0048E81B /* browse.png */; };
 		663D5304265545930048E81B /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 663D5303265545930048E81B /* email.png */; };
 		6665ED81265B5C2C002485E3 /* editViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6665ED80265B5C2C002485E3 /* editViewController.m */; };
-		6665ED98265BABF2002485E3 /* home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6665ED97265BABF2002485E3 /* home1.png */; };
+		6665ED98265BABF2002485E3 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6665ED97265BABF2002485E3 /* home.png */; };
 		6665ED99265BAD8F002485E3 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 6665ED8F265BAB59002485E3 /* search.png */; };
 		66B98952265BB0330092CC83 /* WeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B98951265BB0330092CC83 /* WeiboTableViewCell.m */; };
 		66B98954265BC6500092CC83 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66B98953265BC6500092CC83 /* profile.jpg */; };
@@ -51,7 +51,7 @@
 		6665ED7F265B5C2C002485E3 /* editViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editViewController.h; sourceTree = "<group>"; };
 		6665ED80265B5C2C002485E3 /* editViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editViewController.m; sourceTree = "<group>"; };
 		6665ED8F265BAB59002485E3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
-		6665ED97265BABF2002485E3 /* home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home1.png; sourceTree = "<group>"; };
+		6665ED97265BABF2002485E3 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		66B98950265BB0330092CC83 /* WeiboTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboTableViewCell.h; sourceTree = "<group>"; };
 		66B98951265BB0330092CC83 /* WeiboTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboTableViewCell.m; sourceTree = "<group>"; };
 		66B98953265BC6500092CC83 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
@@ -87,12 +87,12 @@
 		661ACF72265433640032CADD /* Weibo */ = {
 			isa = PBXGroup;
 			children = (
-				6665ED86265BAA87002485E3 /* DiscoverController */,
-				6665ED8B265BAB3F002485E3 /* Image */,
-				6665ED89265BAB0E002485E3 /* Main */,
+				66EB300B265BE2B000DBF805 /* Main */,
+				66EB300A265BE28900DBF805 /* DiscoverController */,
+				66EB3009265BE20700DBF805 /* image */,
+				66EB3008265BE1B700DBF805 /* WebController */,
 				6665ED88265BAAD3002485E3 /* MessageController */,
 				6665ED85265BAA69002485E3 /* MyController */,
-				6665ED8A265BAB32002485E3 /* Web */,
 				6665ED83265BA9FE002485E3 /* WeiboController */,
 			);
 			path = Weibo;
@@ -120,15 +120,6 @@
 			path = MyController;
 			sourceTree = "<group>";
 		};
-		6665ED86265BAA87002485E3 /* DiscoverController */ = {
-			isa = PBXGroup;
-			children = (
-				66349DC62658789E00FEBAFC /* DiscoverViewController.h */,
-				66349DC72658789E00FEBAFC /* DiscoverViewController.m */,
-			);
-			name = DiscoverController;
-			sourceTree = "<group>";
-		};
 		6665ED88265BAAD3002485E3 /* MessageController */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,40 +129,49 @@
 			path = MessageController;
 			sourceTree = "<group>";
 		};
-		6665ED89265BAB0E002485E3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				661ACF73265433640032CADD /* AppDelegate.h */,
-				661ACF76265433640032CADD /* ViewController.h */,
-				661ACF74265433640032CADD /* AppDelegate.m */,
-				661ACF82265433670032CADD /* main.m */,
-				661ACF77265433640032CADD /* ViewController.m */,
-				661ACF81265433670032CADD /* Info.plist */,
-				661ACF7C265433670032CADD /* Assets.xcassets */,
-				661ACF7E265433670032CADD /* LaunchScreen.storyboard */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		6665ED8A265BAB32002485E3 /* Web */ = {
+		66EB3008265BE1B700DBF805 /* WebController */ = {
 			isa = PBXGroup;
 			children = (
 				66349DBE265753BC00FEBAFC /* WebViewController.m */,
 				66349DBD265753BC00FEBAFC /* WebViewController.h */,
 			);
-			name = Web;
+			path = WebController;
 			sourceTree = "<group>";
 		};
-		6665ED8B265BAB3F002485E3 /* Image */ = {
+		66EB3009265BE20700DBF805 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				66B98953265BC6500092CC83 /* profile.jpg */,
+				6665ED97265BABF2002485E3 /* home.png */,
+				6665ED8F265BAB59002485E3 /* search.png */,
 				663D53012655457D0048E81B /* browse.png */,
 				663D5303265545930048E81B /* email.png */,
-				6665ED97265BABF2002485E3 /* home1.png */,
-				6665ED8F265BAB59002485E3 /* search.png */,
+				66B98953265BC6500092CC83 /* profile.jpg */,
 			);
-			name = Image;
+			path = image;
+			sourceTree = "<group>";
+		};
+		66EB300A265BE28900DBF805 /* DiscoverController */ = {
+			isa = PBXGroup;
+			children = (
+				66349DC62658789E00FEBAFC /* DiscoverViewController.h */,
+				66349DC72658789E00FEBAFC /* DiscoverViewController.m */,
+			);
+			path = DiscoverController;
+			sourceTree = "<group>";
+		};
+		66EB300B265BE2B000DBF805 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				661ACF82265433670032CADD /* main.m */,
+				661ACF73265433640032CADD /* AppDelegate.h */,
+				661ACF7E265433670032CADD /* LaunchScreen.storyboard */,
+				661ACF77265433640032CADD /* ViewController.m */,
+				661ACF7C265433670032CADD /* Assets.xcassets */,
+				661ACF81265433670032CADD /* Info.plist */,
+				661ACF74265433640032CADD /* AppDelegate.m */,
+				661ACF76265433640032CADD /* ViewController.h */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6665ED98265BABF2002485E3 /* home1.png in Resources */,
+				6665ED98265BABF2002485E3 /* home.png in Resources */,
 				66B98954265BC6500092CC83 /* profile.jpg in Resources */,
 				661ACF80265433670032CADD /* LaunchScreen.storyboard in Resources */,
 				661ACF7D265433670032CADD /* Assets.xcassets in Resources */,
