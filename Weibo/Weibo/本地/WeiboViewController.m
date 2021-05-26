@@ -26,15 +26,6 @@
     
     [self createButton];
     //创建按钮
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    btn1.frame = CGRectMake(320, 80, 80, 80);
-    [btn1 setTitle:@"写微博" forState:UIControlStateNormal];
-    btn1.backgroundColor = [UIColor grayColor];
-    [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:btn1];
-    [btn1 addTarget:self action:@selector(pushController)forControlEvents:UIControlEventTouchUpInside];
-    
     //创造词典来存储发送的微博
     _weiboList = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"value1",@"key1", @"value2",@"key2",nil];
     

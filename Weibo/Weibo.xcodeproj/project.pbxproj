@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66070EFC265ECA10004A355E /* onlineWeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66070EFB265ECA10004A355E /* onlineWeiboTableViewCell.m */; };
+		660822F6265DEA0F00C9DD21 /* onlineWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660822F5265DEA0F00C9DD21 /* onlineWeiboViewController.m */; };
+		660822F8265DEA1100C9DD21 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660822F7265DEA1100C9DD21 /* WebViewController.m */; };
 		661ACF75265433640032CADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 661ACF74265433640032CADD /* AppDelegate.m */; };
 		661ACF78265433640032CADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661ACF77265433640032CADD /* ViewController.m */; };
 		661ACF7D265433670032CADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661ACF7C265433670032CADD /* Assets.xcassets */; };
 		661ACF80265433670032CADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661ACF7E265433670032CADD /* LaunchScreen.storyboard */; };
 		661ACF83265433670032CADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661ACF82265433670032CADD /* main.m */; };
-		66349DBF265753BC00FEBAFC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66349DBE265753BC00FEBAFC /* WebViewController.m */; };
 		66349DC52658787300FEBAFC /* WeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66349DC42658787300FEBAFC /* WeiboViewController.m */; };
 		66349DC82658789E00FEBAFC /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66349DC72658789E00FEBAFC /* DiscoverViewController.m */; };
 		66349DCB265878C500FEBAFC /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66349DCA265878C500FEBAFC /* MessageViewController.m */; };
@@ -27,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66070EFA265ECA10004A355E /* onlineWeiboTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = onlineWeiboTableViewCell.h; sourceTree = "<group>"; };
+		66070EFB265ECA10004A355E /* onlineWeiboTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onlineWeiboTableViewCell.m; sourceTree = "<group>"; };
+		660822F5265DEA0F00C9DD21 /* onlineWeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onlineWeiboViewController.m; sourceTree = "<group>"; };
+		660822F7265DEA1100C9DD21 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		660822F9265DEA1200C9DD21 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		660822FB265DEA3E00C9DD21 /* onlineWeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = onlineWeiboViewController.h; sourceTree = "<group>"; };
 		661ACF70265433640032CADD /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		661ACF73265433640032CADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		661ACF74265433640032CADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,10 +42,7 @@
 		661ACF77265433640032CADD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		661ACF7C265433670032CADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		661ACF7F265433670032CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		661ACF81265433670032CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		661ACF82265433670032CADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66349DBD265753BC00FEBAFC /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		66349DBE265753BC00FEBAFC /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		66349DC32658787300FEBAFC /* WeiboViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboViewController.h; sourceTree = "<group>"; };
 		66349DC42658787300FEBAFC /* WeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboViewController.m; sourceTree = "<group>"; };
 		66349DC62658789E00FEBAFC /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 		66349DCD265878DB00FEBAFC /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		663D53012655457D0048E81B /* browse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browse.png; sourceTree = "<group>"; };
 		663D5303265545930048E81B /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		664259D6265EE6CC00142547 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6665ED7F265B5C2C002485E3 /* editViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editViewController.h; sourceTree = "<group>"; };
 		6665ED80265B5C2C002485E3 /* editViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editViewController.m; sourceTree = "<group>"; };
 		6665ED8F265BAB59002485E3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
@@ -68,6 +74,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66070EF7265EA158004A355E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66070EF8265EA192004A355E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				660822F7265DEA1100C9DD21 /* WebViewController.m */,
+				660822F9265DEA1200C9DD21 /* WebViewController.h */,
+				66070EFA265ECA10004A355E /* onlineWeiboTableViewCell.h */,
+				66070EFB265ECA10004A355E /* onlineWeiboTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66070EF9265EA1A7004A355E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				660822F5265DEA0F00C9DD21 /* onlineWeiboViewController.m */,
+				660822FB265DEA3E00C9DD21 /* onlineWeiboViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66070EFD265ECA31004A355E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66070EFE265ECA42004A355E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6665ED80265B5C2C002485E3 /* editViewController.m */,
+				6665ED7F265B5C2C002485E3 /* editViewController.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66070EFF265ECA4B004A355E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		661ACF67265433640032CADD = {
 			isa = PBXGroup;
 			children = (
@@ -87,55 +143,58 @@
 		661ACF72265433640032CADD /* Weibo */ = {
 			isa = PBXGroup;
 			children = (
+				664259D6265EE6CC00142547 /* Info.plist */,
 				66EB300B265BE2B000DBF805 /* Main */,
-				66EB300A265BE28900DBF805 /* DiscoverController */,
+				66EB300A265BE28900DBF805 /* 发现 */,
 				66EB3009265BE20700DBF805 /* image */,
-				66EB3008265BE1B700DBF805 /* WebController */,
-				6665ED88265BAAD3002485E3 /* MessageController */,
-				6665ED85265BAA69002485E3 /* MyController */,
-				6665ED83265BA9FE002485E3 /* WeiboController */,
+				66EB3008265BE1B700DBF805 /* 微博 */,
+				6665ED88265BAAD3002485E3 /* 消息 */,
+				6665ED85265BAA69002485E3 /* 我的 */,
+				6665ED83265BA9FE002485E3 /* 本地 */,
 			);
 			path = Weibo;
 			sourceTree = "<group>";
 		};
-		6665ED83265BA9FE002485E3 /* WeiboController */ = {
+		6665ED83265BA9FE002485E3 /* 本地 */ = {
 			isa = PBXGroup;
 			children = (
-				66349DC32658787300FEBAFC /* WeiboViewController.h */,
-				66349DC42658787300FEBAFC /* WeiboViewController.m */,
-				6665ED7F265B5C2C002485E3 /* editViewController.h */,
-				6665ED80265B5C2C002485E3 /* editViewController.m */,
+				66070EFF265ECA4B004A355E /* Model */,
+				66070EFE265ECA42004A355E /* View */,
+				66070EFD265ECA31004A355E /* Controller */,
 				66B98950265BB0330092CC83 /* WeiboTableViewCell.h */,
+				66349DC42658787300FEBAFC /* WeiboViewController.m */,
+				66349DC32658787300FEBAFC /* WeiboViewController.h */,
 				66B98951265BB0330092CC83 /* WeiboTableViewCell.m */,
 			);
-			path = WeiboController;
+			path = "本地";
 			sourceTree = "<group>";
 		};
-		6665ED85265BAA69002485E3 /* MyController */ = {
+		6665ED85265BAA69002485E3 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
 				66349DCC265878DB00FEBAFC /* MyViewController.h */,
 				66349DCD265878DB00FEBAFC /* MyViewController.m */,
 			);
-			path = MyController;
+			path = "我的";
 			sourceTree = "<group>";
 		};
-		6665ED88265BAAD3002485E3 /* MessageController */ = {
+		6665ED88265BAAD3002485E3 /* 消息 */ = {
 			isa = PBXGroup;
 			children = (
-				66349DCA265878C500FEBAFC /* MessageViewController.m */,
 				66349DC9265878C500FEBAFC /* MessageViewController.h */,
+				66349DCA265878C500FEBAFC /* MessageViewController.m */,
 			);
-			path = MessageController;
+			path = "消息";
 			sourceTree = "<group>";
 		};
-		66EB3008265BE1B700DBF805 /* WebController */ = {
+		66EB3008265BE1B700DBF805 /* 微博 */ = {
 			isa = PBXGroup;
 			children = (
-				66349DBE265753BC00FEBAFC /* WebViewController.m */,
-				66349DBD265753BC00FEBAFC /* WebViewController.h */,
+				66070EF9265EA1A7004A355E /* Controller */,
+				66070EF8265EA192004A355E /* View */,
+				66070EF7265EA158004A355E /* Model */,
 			);
-			path = WebController;
+			name = "微博";
 			sourceTree = "<group>";
 		};
 		66EB3009265BE20700DBF805 /* image */ = {
@@ -150,13 +209,13 @@
 			path = image;
 			sourceTree = "<group>";
 		};
-		66EB300A265BE28900DBF805 /* DiscoverController */ = {
+		66EB300A265BE28900DBF805 /* 发现 */ = {
 			isa = PBXGroup;
 			children = (
 				66349DC62658789E00FEBAFC /* DiscoverViewController.h */,
 				66349DC72658789E00FEBAFC /* DiscoverViewController.m */,
 			);
-			path = DiscoverController;
+			path = "发现";
 			sourceTree = "<group>";
 		};
 		66EB300B265BE2B000DBF805 /* Main */ = {
@@ -167,7 +226,6 @@
 				661ACF7E265433670032CADD /* LaunchScreen.storyboard */,
 				661ACF77265433640032CADD /* ViewController.m */,
 				661ACF7C265433670032CADD /* Assets.xcassets */,
-				661ACF81265433670032CADD /* Info.plist */,
 				661ACF74265433640032CADD /* AppDelegate.m */,
 				661ACF76265433640032CADD /* ViewController.h */,
 			);
@@ -248,12 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660822F6265DEA0F00C9DD21 /* onlineWeiboViewController.m in Sources */,
 				661ACF78265433640032CADD /* ViewController.m in Sources */,
 				66349DC82658789E00FEBAFC /* DiscoverViewController.m in Sources */,
 				6665ED81265B5C2C002485E3 /* editViewController.m in Sources */,
 				66349DC52658787300FEBAFC /* WeiboViewController.m in Sources */,
 				66B98952265BB0330092CC83 /* WeiboTableViewCell.m in Sources */,
-				66349DBF265753BC00FEBAFC /* WebViewController.m in Sources */,
+				660822F8265DEA1100C9DD21 /* WebViewController.m in Sources */,
+				66070EFC265ECA10004A355E /* onlineWeiboTableViewCell.m in Sources */,
 				66349DCE265878DB00FEBAFC /* MyViewController.m in Sources */,
 				661ACF83265433670032CADD /* main.m in Sources */,
 				66349DCB265878C500FEBAFC /* MessageViewController.m in Sources */,

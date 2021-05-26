@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 #import "WebViewController.h"
+\
 @interface ViewController () <WKNavigationDelegate>
 @property(nonatomic,strong,readwrite)WKWebView *webview;
 @end
@@ -38,6 +39,7 @@
     [btn1 setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [btn1 setTitleColor:[UIColor yellowColor] forState:UIControlStateHighlighted];
     [btn1 setTitleColor:[UIColor purpleColor] forState:UIControlStateSelected];
+    UITabBar *tabbar = [[UITabBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
 
     
     [self.view addSubview:view1];

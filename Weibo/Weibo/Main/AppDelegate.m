@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "WebViewController.h"
 #import "WeiboViewController.h"
-#import "editViewController.h"
+#import "onlineWeiboViewController.h"
+
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
@@ -23,7 +24,7 @@
     
     UITabBarController *tabbarController = [[UITabBarController alloc]init];
     WeiboViewController *viewController1 = [[WeiboViewController alloc]init];
-    UIViewController *viewController2 = [[UIViewController alloc]init];
+    onlineWeiboViewController *viewController2 = [[onlineWeiboViewController alloc]init];
     UIViewController *viewController3 = [[UIViewController alloc]init];
       ViewController *viewController4= [[ViewController alloc]init];
 
