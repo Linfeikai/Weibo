@@ -148,7 +148,7 @@
 //    rangeOne = [url rangeOfString:@"code="];
 //    //根据url中”code=”的range来得到code参数的值的range
 //    NSRange range = NSMakeRange(rangeOne.length+rangeOne.location, url.length-(rangeOne.length+rangeOne.location));
-//    
+//    	
 //    //获取code的值
 //    NSString *codeString = [url substringWithRange:range];
 //    NSLog(@"code = :%@",codeString);
