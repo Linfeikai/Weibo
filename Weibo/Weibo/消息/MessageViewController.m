@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blueColor];
+    UIImageView *view = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 420,400)];
+    view.image = [UIImage imageNamed:@"moon.jpg"];
+    UIImageView *view2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 400, 460,430)];
+    view2.image = [UIImage imageNamed:@"heart.jpg"];
+    [self.view addSubview:view];
+    [self.view addSubview:view2];
     // Do any additional setup after loading the view.
 }
 

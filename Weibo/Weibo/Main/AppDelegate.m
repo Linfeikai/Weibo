@@ -6,8 +6,8 @@
 //  Copyright © 2021 Linfeikai. All rights reserved.
 //
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "WebViewController.h"
+#import "MyViewController.h"
+#import "MessageViewController.h"
 #import "WeiboViewController.h"
 #import "onlineWeiboViewController.h"
 
@@ -25,20 +25,14 @@
     UITabBarController *tabbarController = [[UITabBarController alloc]init];
     WeiboViewController *viewController1 = [[WeiboViewController alloc]init];
     onlineWeiboViewController *viewController2 = [[onlineWeiboViewController alloc]init];
-    UIViewController *viewController3 = [[UIViewController alloc]init];
-      ViewController *viewController4= [[ViewController alloc]init];
+    MessageViewController *viewController3 = [[MessageViewController alloc]init];
+      MyViewController *viewController4= [[MyViewController alloc]init];
 
-    viewController1.tabBarItem.title = @"首页";
-    //viewController1.view.backgroundColor =[UIColor redColor];
-   viewController1.tabBarItem.image = [UIImage imageNamed:@"home1"];
     viewController2.tabBarItem.title = @"发现";
-    viewController2.view.backgroundColor =[UIColor grayColor];
     viewController2.tabBarItem.image = [UIImage imageNamed:@"search"];
     viewController3.tabBarItem.title = @"消息";
-    viewController3.view.backgroundColor =[UIColor greenColor];
-   viewController3.tabBarItem.image = [UIImage imageNamed:@"email"];
+    viewController3.tabBarItem.image = [UIImage imageNamed:@"email"];
     viewController4.tabBarItem.title = @"我的";
-    viewController4.view.backgroundColor =[UIColor purpleColor];
     viewController4.tabBarItem.image = [UIImage imageNamed:@"browse"];
     
 
