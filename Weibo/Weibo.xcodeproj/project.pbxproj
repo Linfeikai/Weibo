@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6606E5E1265EF10D0019A1DE /* onlineWeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6606E5E0265EF10D0019A1DE /* onlineWeiboTableViewCell.m */; };
 		660822F6265DEA0F00C9DD21 /* onlineWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660822F5265DEA0F00C9DD21 /* onlineWeiboViewController.m */; };
 		660822F8265DEA1100C9DD21 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660822F7265DEA1100C9DD21 /* WebViewController.m */; };
 		660A743626603924003AD3E5 /* userItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 660A743526603924003AD3E5 /* userItem.m */; };
@@ -29,6 +28,7 @@
 		665D515C2661B1F9007580BA /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 665D515B2661B1F8007580BA /* dog.jpg */; };
 		665D515E2661B2C2007580BA /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 665D515D2661B2C2007580BA /* heart.jpg */; };
 		665D51602661B341007580BA /* moon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 665D515F2661B341007580BA /* moon.jpg */; };
+		665D51622661C309007580BA /* onlineWeiboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 665D51612661C309007580BA /* onlineWeiboTableViewCell.m */; };
 		6665ED81265B5C2C002485E3 /* editViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6665ED80265B5C2C002485E3 /* editViewController.m */; };
 		6665ED98265BABF2002485E3 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6665ED97265BABF2002485E3 /* home.png */; };
 		6665ED99265BAD8F002485E3 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 6665ED8F265BAB59002485E3 /* search.png */; };
@@ -41,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		6606E5DF265EF1000019A1DE /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = Weibo/Controller/WebViewController.h; sourceTree = SOURCE_ROOT; };
-		6606E5E0265EF10D0019A1DE /* onlineWeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = onlineWeiboTableViewCell.m; path = "Weibo/本地/onlineWeiboTableViewCell.m"; sourceTree = SOURCE_ROOT; };
 		66070EFA265ECA10004A355E /* onlineWeiboTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = onlineWeiboTableViewCell.h; sourceTree = "<group>"; };
 		660822F5265DEA0F00C9DD21 /* onlineWeiboViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = onlineWeiboViewController.m; sourceTree = "<group>"; };
 		660822F7265DEA1100C9DD21 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		665D515B2661B1F8007580BA /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog.jpg; path = ../../../../dog.jpg; sourceTree = "<group>"; };
 		665D515D2661B2C2007580BA /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heart.jpg; path = ../../../../heart.jpg; sourceTree = "<group>"; };
 		665D515F2661B341007580BA /* moon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = moon.jpg; path = ../../../../moon.jpg; sourceTree = "<group>"; };
+		665D51612661C309007580BA /* onlineWeiboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = onlineWeiboTableViewCell.m; sourceTree = "<group>"; };
 		6665ED7F265B5C2C002485E3 /* editViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = editViewController.h; sourceTree = "<group>"; };
 		6665ED80265B5C2C002485E3 /* editViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = editViewController.m; sourceTree = "<group>"; };
 		6665ED8F265BAB59002485E3 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				66070EFA265ECA10004A355E /* onlineWeiboTableViewCell.h */,
-				6606E5E0265EF10D0019A1DE /* onlineWeiboTableViewCell.m */,
+				665D51612661C309007580BA /* onlineWeiboTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,11 +348,11 @@
 				660822F6265DEA0F00C9DD21 /* onlineWeiboViewController.m in Sources */,
 				66ACE427265EF28200D43448 /* WeiboViewController.m in Sources */,
 				6665ED81265B5C2C002485E3 /* editViewController.m in Sources */,
+				665D51622661C309007580BA /* onlineWeiboTableViewCell.m in Sources */,
 				660A743626603924003AD3E5 /* userItem.m in Sources */,
 				660822F8265DEA1100C9DD21 /* WebViewController.m in Sources */,
 				66ACE42B265F1A4200D43448 /* weiboItem.m in Sources */,
 				66ACE428265EF28200D43448 /* WeiboTableViewCell.m in Sources */,
-				6606E5E1265EF10D0019A1DE /* onlineWeiboTableViewCell.m in Sources */,
 				660A743926603E0D003AD3E5 /* imageItem.m in Sources */,
 				66349DCE265878DB00FEBAFC /* MyViewController.m in Sources */,
 				661ACF83265433670032CADD /* main.m in Sources */,
