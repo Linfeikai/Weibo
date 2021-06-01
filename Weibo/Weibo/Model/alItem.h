@@ -16,8 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy,readwrite)weiboItem *weiboItem1;
 @property(nonatomic,copy,readwrite)userItem *userItem1;
 @property(nonatomic,copy,readwrite)imageItem *imageItem1;
--(void)configWithStatusDictionay:(NSDictionary *)dict1 andUserDictionary:(NSDictionary*)dict2 andPicDictionary:(NSDictionary*)dict3;
 
+-(void)configWithStatusDictionay:(NSDictionary *)dict1;
+-(void)configWithUserDictionary:(NSDictionary*)dict2;
+-(void)configWithPicDictionary:(NSDictionary*)dict3;
 @end
 
 NS_ASSUME_NONNULL_END

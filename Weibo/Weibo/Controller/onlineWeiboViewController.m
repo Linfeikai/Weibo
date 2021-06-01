@@ -12,7 +12,7 @@
 #import "wbListLoader.h"
 #import "alItem.h"
 
-@interface onlineWeiboViewController ()<UITableViewDelegate,UITableViewDataSource,wbListLoaderDelegate>
+@interface onlineWeiboViewController ()<UITableViewDelegate,UITableViewDataSource,wbListLoaderDelegate,onlineWeiboTableViewCellDelegate>
 @property(nonatomic,strong,readwrite) UITableView *tableview;
 @property(nonatomic,strong,readwrite) wbListLoader *listLoader;
 @property(nonatomic,strong,readwrite) NSArray<userItem *>*userArray;
@@ -26,8 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableview reloadData];
-    [self createButton];
+    [self createLogInButton];
+    [self createRefreshButton];
     _tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 160, self.view.frame.size.width,self.view.frame.size.height - 160)];
     _tableview.dataSource = self;
     _tableview.delegate = self;
@@ -41,11 +41,13 @@
 
 }
 
--(void)createButton
+#pragma mark - 创建登陆按钮
+
+-(void)createLogInButton
 {
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    btn1.frame = CGRectMake(0, 80, self.view.frame.size.width, 80);
+    btn1.frame = CGRectMake(200, 80, self.view.frame.size.width/2, 80);
     [btn1 setTitle:@"登录" forState:UIControlStateNormal];
     btn1.backgroundColor = [UIColor whiteColor];
     [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -53,12 +55,33 @@
     [self.view addSubview:btn1];
     [btn1 addTarget:self action:@selector(pushController)forControlEvents:UIControlEventTouchUpInside];
 }
+
 -(void)pushController
 {
     WebViewController *WebViewController1 = [[WebViewController alloc]init];
     [self.navigationController pushViewController:WebViewController1 animated:YES];
     
 }
+
+#pragma mark - 创建刷新按钮
+
+-(void)createRefreshButton
+{
+    
+    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    btn2.frame = CGRectMake(0, 80, self.view.frame.size.width/2, 80);
+    [btn2 setTitle:@"刷新" forState:UIControlStateNormal];
+    btn2.backgroundColor = [UIColor whiteColor];
+    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn2];
+    [btn2 addTarget:self action:@selector(weiboRefresh)forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)weiboRefresh
+{
+    [self.listLoader loadListData];
+}
+
 
 #pragma mark - 实现listloader代理方法
 -(void)showTextWithweiboItemArray:(NSArray *)weiboItemArray anduserItemArray:(NSArray *)userItemArray andimageItemArray:(NSArray *)imageItemArray
@@ -108,6 +131,8 @@
     
     NSNumber* likeNumber = self.weiboArray[indexPath.row].likes;
     cell.likeView.text = [NSString localizedStringWithFormat:@"%@", likeNumber];
+    
+    cell.delegate = self;
 
     
     return cell;
@@ -118,8 +143,13 @@
 {
     return 350;
 }
+
+
+
 @end
-//
+
+
+//新建一个文件来存储Aceess_token
 //-(void)createFile
 //{
 //    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

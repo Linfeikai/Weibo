@@ -10,6 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol onlineWeiboTableViewCellDelegate <NSObject>
+
+- (void)tableViewCell:(UITableViewCell *)tableViewCell clickCollectButton:(UIButton *)collectBtn;	
+
+@end
+
+
 @interface onlineWeiboTableViewCell : UITableViewCell
 
 
@@ -22,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong,readwrite) UILabel *repost;
 @property(nonatomic,strong,readwrite) UILabel *commentView;
 @property(nonatomic,strong,readwrite) UILabel *likeView;
+@property(nonatomic,weak,readwrite) id<onlineWeiboTableViewCellDelegate> delegate;
 
 @end
 

@@ -19,4 +19,22 @@
     self.imageItem1 = [[imageItem alloc]init];
     [_imageItem1 configWithDictionay:dict3];
 }
+-(void)configWithStatusDictionay:(NSDictionary *)dict1
+{
+    self.weiboItem1 = [[weiboItem alloc]init];
+    [_weiboItem1 configWithDictionay:dict1];
+
+}
+-(void)configWithUserDictionary:(NSDictionary*)dict2
+{
+    self.userItem1 = [[userItem alloc]init];
+    [_userItem1 configWithDictionay:dict2];
+}
+-(void)configWithPicDictionary:(NSDictionary*)dict3
+{
+    self.imageItem1 = [[imageItem alloc]init];
+    [_imageItem1 configWithDictionay:dict3];
+
+}
+
 @end

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface imageItem : NSObject
+@interface imageItem : NSObject<NSSecureCoding>
 
 @property(nonatomic,copy,readwrite)NSString *pic_url;
 -(void)configWithDictionay:(NSDictionary *)dictionary;

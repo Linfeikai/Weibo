@@ -28,6 +28,7 @@
     })];
     
 //    forcelogin=true
+// 跳转到用户授权页 请求用户授权并获取access_token
     NSString *urlstring = @"https://api.weibo.com/oauth2/authorize?client_id=2589579850&response_type=code&forcelogin=true&redirect_uri=https://api.weibo.com/oauth2/default.html";
     NSURL *url = [NSURL URLWithString:urlstring];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
@@ -57,7 +58,7 @@
     }
 }
 
-# pragma mark - 获取access_token
+# pragma mark - 获取access_token并存储到本地
 
 -(void)getAccess_tokenWith:(NSString*)url 
     {
@@ -74,6 +75,7 @@
     //1.定义一个可变字符串来存储新的url
     NSMutableString *muString = [[NSMutableString alloc]initWithString:@"https://api.weibo.com/oauth2/access_token?client_id=2589579850&client_secret=9391332e9bc4685806537719c49bd403&grant_type=authorization_code&redirect_uri=https://api.weibo.com/oauth2/default.html&code="];
     // client_id、client_secret、redirect_uri后面的分别是App Key、App Secret、回调页面
+        
     //2.把code加到url后面，得到获取access_token的url
     [muString appendString:codeString];
     NSLog(@"access_token url :%@",muString);
@@ -82,7 +84,7 @@
     // b.创建请求
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:urlstring cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10];
     // 把数据请求从默认的GET换成POST
-    [request setHTTPMethod:@"POST"];//？？？？？？？？
+    [request setHTTPMethod:@"POST"];
     NSString *str = @"type=focus-c";
     NSData *data1 = [str dataUsingEncoding:NSUTF8StringEncoding];
     [request setHTTPBody:data1];
@@ -90,15 +92,16 @@
     //    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil
     //     error:nil];
     NSURLSession *session = [NSURLSession sharedSession];
+        __weak typeof (self) weakSelf = self;
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data,NSURLResponse *response,NSError *error)
                     {
+                        __strong typeof (weakSelf) strongSelf = weakSelf;
                                 NSError *jsonError;
       NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
-                        NSLog(@"");
-            self.access_token= [dictionary objectForKey:@"access_token"];
-            self.uid = [dictionary objectForKey:@"uid"];
+            strongSelf.access_token= [dictionary objectForKey:@"access_token"];
+            strongSelf.uid = [dictionary objectForKey:@"uid"];
                         //在这里 把access_token存储到本地，然后从本地获取
-                    [self storeLogInDataWith:dictionary];
+                    [strongSelf storeLogInDataWith:dictionary];
                                       }];
         [dataTask resume];
     }

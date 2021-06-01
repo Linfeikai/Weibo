@@ -113,6 +113,7 @@
             self.collectBtn = [[UIButton alloc]initWithFrame:CGRectMake(350, 20, 50 , 50)];
             [self.collectBtn setImage:[UIImage imageNamed:@"favorite"] forState:(UIControlStateNormal)];
             [self.collectBtn setImage:[UIImage imageNamed:@"favorite-filling"] forState:UIControlStateHighlighted];
+            [_collectBtn addTarget:self action:@selector(addToFavorites) forControlEvents:UIControlEventTouchUpInside];
             self.collectBtn;
             
         })];
@@ -132,5 +133,12 @@
     return self;
 }
 
+
+-(void)addToFavorites
+{
+    if(self.delegate && [self.delegate respondsToSelector:@selector(tableViewCell:clickCollectButton:)]){
+        [self.delegate tableViewCell:self clickCollectButton:_collectBtn];
+    }
+}
 
 @end
